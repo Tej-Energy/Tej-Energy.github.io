@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Tej-Energy/Tej-Energy.github.io
   branch: main
+  auth_type: implicit
+  app_id: 0v23liRBNLZAl85XOigW
 
 media_folder: "images"
 public_folder: "/images"
@@ -13,34 +16,101 @@ collections:
         label: "Hero Text"
         file: "_data/hero.json"
         fields:
-          - {label: "Main Headline Line 1", name: "headline1", widget: "string", default: "Where Artificial Intelligence"}
-          - {label: "Main Headline Line 2 (gold)", name: "headline2", widget: "string", default: "meets Battery Technology."}
+          - {label: "Label Tag", name: "label", widget: "string", default: "// AI x Battery Technology Startup"}
+          - {label: "Headline Line 1", name: "headline1", widget: "string", default: "Where Artificial Intelligence"}
+          - {label: "Headline Line 2 gold", name: "headline2", widget: "string", default: "meets Battery Technology."}
           - {label: "Subtext", name: "subtext", widget: "text", default: "TeJ Energy is building the bridge between AI and energy storage."}
-          - {label: "Primary Button Text", name: "btn1", widget: "string", default: "Explore Our Tools"}
+          - {label: "Primary Button Text", name: "btn1", widget: "string", default: "See What We Are Building"}
+          - {label: "Primary Button Link", name: "btn1_link", widget: "string", default: "#products"}
           - {label: "Secondary Button Text", name: "btn2", widget: "string", default: "Meet the Founder"}
+          - {label: "Secondary Button Link", name: "btn2_link", widget: "string", default: "#founder"}
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - {label: "Number", name: "num", widget: "string"}
+              - {label: "Suffix", name: "suffix", widget: "string"}
+              - {label: "Label", name: "label", widget: "string"}
 
   - name: "about"
     label: "About Section"
     files:
       - name: "about"
-        label: "About Cards"
+        label: "About Section"
         file: "_data/about.json"
         fields:
-          - label: "Section Title"
-            name: "title"
-            widget: "string"
-            default: "AI-powered thinking for a battery-powered world."
-          - label: "Section Description"
-            name: "desc"
-            widget: "text"
+          - {label: "Section Tag", name: "tag", widget: "string", default: "// what is tej energy"}
+          - {label: "Section Title Line 1", name: "title1", widget: "string", default: "AI-powered thinking"}
+          - {label: "Section Title Line 2", name: "title2", widget: "string", default: "for a battery-powered world."}
+          - {label: "Section Description", name: "desc", widget: "text"}
           - label: "Cards"
             name: "cards"
             widget: "list"
             fields:
-              - {label: "Icon (emoji)", name: "icon", widget: "string"}
+              - {label: "Icon emoji", name: "icon", widget: "string"}
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Description", name: "desc", widget: "text"}
               - {label: "Tag", name: "tag", widget: "string"}
+
+  - name: "products"
+    label: "Products Section"
+    files:
+      - name: "products"
+        label: "Products Roadmap"
+        file: "_data/products.json"
+        fields:
+          - {label: "Section Tag", name: "tag", widget: "string", default: "// products"}
+          - {label: "Section Title", name: "title", widget: "string", default: "Things we are building."}
+          - {label: "Section Description", name: "desc", widget: "text"}
+          - label: "Roadmap Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "desc", widget: "text"}
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options: ["building", "exploring", "planned"]
+
+  - name: "services"
+    label: "Services Section"
+    files:
+      - name: "services"
+        label: "Services"
+        file: "_data/services.json"
+        fields:
+          - {label: "Section Tag", name: "tag", widget: "string", default: "// services"}
+          - {label: "Section Title", name: "title", widget: "string", default: "How we work with you."}
+          - {label: "Section Description", name: "desc", widget: "text"}
+          - label: "Service Cards"
+            name: "cards"
+            widget: "list"
+            fields:
+              - {label: "Icon emoji", name: "icon", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "desc", widget: "text"}
+
+  - name: "tools"
+    label: "Tools Section"
+    files:
+      - name: "tools"
+        label: "Open Tools"
+        file: "_data/tools.json"
+        fields:
+          - {label: "Section Tag", name: "tag", widget: "string", default: "// tools"}
+          - {label: "Section Title", name: "title", widget: "string", default: "Open resources and tools."}
+          - {label: "Section Description", name: "desc", widget: "text"}
+          - label: "Tools"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "desc", widget: "text"}
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options: ["building", "exploring", "planned"]
 
   - name: "founder"
     label: "Founder Section"
@@ -50,15 +120,29 @@ collections:
         file: "_data/founder.json"
         fields:
           - {label: "Name", name: "name", widget: "string", default: "Tejendra J"}
-          - {label: "Handle / Title", name: "handle", widget: "string", default: "TeJ · Founder, TeJ Energy"}
-          - {label: "Bio Line 1", name: "bio1", widget: "text"}
-          - {label: "Bio Line 2", name: "bio2", widget: "text"}
+          - {label: "Handle Title", name: "handle", widget: "string", default: "TeJ Founder TeJ Energy"}
+          - {label: "Bio Paragraph 1", name: "bio1", widget: "text"}
+          - {label: "Bio Paragraph 2", name: "bio2", widget: "text"}
           - {label: "LinkedIn URL", name: "linkedin", widget: "string"}
           - {label: "Email", name: "email", widget: "string"}
           - label: "Skill Chips"
             name: "chips"
             widget: "list"
             field: {label: "Chip", name: "chip", widget: "string"}
+          - label: "Experience Items"
+            name: "experience"
+            widget: "list"
+            fields:
+              - {label: "Company", name: "company", widget: "string"}
+              - {label: "Role", name: "role", widget: "string"}
+              - {label: "Duration and Location", name: "meta", widget: "string"}
+          - label: "Education"
+            name: "education"
+            widget: "list"
+            fields:
+              - {label: "Degree", name: "degree", widget: "string"}
+              - {label: "School", name: "school", widget: "string"}
+              - {label: "Detail", name: "detail", widget: "string"}
 
   - name: "contact"
     label: "Contact Section"
@@ -67,7 +151,18 @@ collections:
         label: "Contact Info"
         file: "_data/contact.json"
         fields:
-          - {label: "Section Title", name: "title", widget: "string", default: "Let's talk batteries and AI."}
-          - {label: "Subtitle text", name: "sub", widget: "text"}
+          - {label: "Section Title", name: "title", widget: "string", default: "Lets talk batteries and AI."}
+          - {label: "Subtitle Description", name: "sub", widget: "text"}
           - {label: "Email Address", name: "email", widget: "string"}
           - {label: "LinkedIn URL", name: "linkedin", widget: "string"}
+
+  - name: "nav"
+    label: "Navigation and Footer"
+    files:
+      - name: "nav"
+        label: "Nav and Footer"
+        file: "_data/nav.json"
+        fields:
+          - {label: "CTA Button Text", name: "cta_text", widget: "string", default: "Get in Touch"}
+          - {label: "CTA Button Link", name: "cta_link", widget: "string", default: "mailto:jangampallitejendra@gmail.com"}
+          - {label: "Footer Copyright Text", name: "footer", widget: "string", default: "2026 hosted on GitHub Pages"}
