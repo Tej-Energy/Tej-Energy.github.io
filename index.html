@@ -3,345 +3,451 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Tejendra J (TeJ) | Battery Energy Storage & R&D Manager</title>
-<meta name="description" content="Tejendra J (TeJ) - Manager R&D & Technology at Cospowers New Energy. Expert in Li-ion batteries, BESS, Python analytics. IIT Hyderabad | IIT Dharwad."/>
+<title>TeJ Energy — AI Meets Battery Technology</title>
+<meta name="description" content="TeJ Energy is a startup connecting AI with Battery Technology. Products, tools, and services for smarter energy storage. Founded by Tejendra J."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
-:root{--primary:#00d4ff;--accent:#ff6b35;--bg:#0a0e1a;--bg2:#111827;--bg3:#1a2235;--text:#e2e8f0;--text-muted:#94a3b8;--border:#1e293b;--card:#131d2e;--gradient:linear-gradient(135deg,#00d4ff,#7c3aed);}
-*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
-body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;}
-a{color:var(--primary);text-decoration:none;}
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;background:rgba(10,14,26,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
-.nav-logo{font-family:'Space Grotesk',sans-serif;font-size:1.5rem;font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-.nav-links{display:flex;gap:2rem;list-style:none;}
-.nav-links a{color:var(--text-muted);font-size:.9rem;font-weight:500;transition:.3s;}
-.nav-links a:hover{color:var(--primary);}
-#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;padding:6rem 2rem 4rem;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(0,212,255,.15),transparent 70%),radial-gradient(ellipse 60% 40% at 80% 80%,rgba(124,58,237,.12),transparent 60%);pointer-events:none;}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
-.hero-content{max-width:900px;text-align:center;position:relative;z-index:1;}
-.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.3);border-radius:50px;padding:.4rem 1.2rem;font-size:.85rem;color:var(--primary);margin-bottom:1.5rem;}
-h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;line-height:1.1;margin-bottom:.5rem;}
-.hero-name{background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-.hero-title{font-size:clamp(1rem,2.5vw,1.4rem);color:var(--text-muted);margin-bottom:1rem;}
-.hero-title span{color:var(--primary);font-weight:600;}
-.hero-location{display:flex;align-items:center;justify-content:center;gap:.5rem;color:var(--text-muted);font-size:.9rem;margin-bottom:2rem;}
-.hero-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-bottom:2.5rem;}
-.hero-tag{background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:6px;padding:.4rem .9rem;font-size:.8rem;color:var(--text-muted);transition:.3s;}
-.hero-tag:hover{border-color:var(--primary);color:var(--primary);}
-.hero-cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
-.btn-primary{background:var(--gradient);color:#fff;padding:.85rem 2rem;border-radius:8px;font-weight:600;font-size:.95rem;transition:.3s;border:none;cursor:pointer;display:inline-block;}
-.btn-primary:hover{opacity:.9;transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,212,255,.3);}
-.btn-secondary{background:transparent;color:var(--text);padding:.85rem 2rem;border-radius:8px;font-weight:600;font-size:.95rem;border:1px solid var(--border);transition:.3s;cursor:pointer;display:inline-block;}
-.btn-secondary:hover{border-color:var(--primary);color:var(--primary);}
-.hero-stats{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);}
-.stat{text-align:center;}
-.stat-num{font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;color:var(--primary);}
-.stat-label{font-size:.8rem;color:var(--text-muted);}
-section{padding:5rem 2rem;}
-.container{max-width:1100px;margin:0 auto;}
-.section-tag{display:inline-block;background:rgba(0,212,255,.1);color:var(--primary);font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .8rem;border-radius:4px;margin-bottom:1rem;}
-.section-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;margin-bottom:1rem;}
-.section-subtitle{color:var(--text-muted);font-size:1.05rem;max-width:600px;}
-#about{background:var(--bg2);}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-top:3rem;}
-.about-text p{color:var(--text-muted);line-height:1.8;margin-bottom:1.2rem;font-size:.98rem;}
-.about-highlights{display:flex;flex-direction:column;gap:1.2rem;}
-.highlight-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;border-left:3px solid var(--primary);}
-.highlight-card h4{font-size:1rem;font-weight:600;margin-bottom:.5rem;}
-.highlight-card p{font-size:.88rem;color:var(--text-muted);}
-#experience{background:var(--bg);}
-.exp-timeline{margin-top:3rem;position:relative;}
-.exp-timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--gradient);}
-.exp-item{padding:0 0 3rem 2.5rem;position:relative;}
-.exp-item::before{content:'';position:absolute;left:-5px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--primary);box-shadow:0 0 0 3px rgba(0,212,255,.2);}
-.exp-company{font-size:.85rem;color:var(--primary);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.3rem;}
-.exp-role{font-family:'Space Grotesk',sans-serif;font-size:1.3rem;font-weight:700;margin-bottom:.3rem;}
-.exp-period{font-size:.85rem;color:var(--text-muted);margin-bottom:1rem;}
-.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:.5rem;}
-.exp-bullets li{color:var(--text-muted);font-size:.9rem;padding-left:1.5rem;position:relative;}
-.exp-bullets li::before{content:'▸';position:absolute;left:0;color:var(--primary);}
-#skills{background:var(--bg2);}
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;}
-.skill-category{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.8rem;}
-.skill-category h3{font-size:1rem;font-weight:700;margin-bottom:1.2rem;}
-.skill-tags{display:flex;flex-wrap:wrap;gap:.6rem;}
-.skill-tag{background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.2);color:var(--primary);padding:.3rem .8rem;border-radius:6px;font-size:.82rem;font-weight:500;}
-#education{background:var(--bg);}
-.edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;margin-top:3rem;}
-.edu-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2rem;transition:.3s;}
-.edu-card:hover{border-color:var(--primary);transform:translateY(-4px);}
-.edu-degree{font-weight:700;font-size:1rem;margin-bottom:.3rem;}
-.edu-school{color:var(--primary);font-size:.95rem;font-weight:600;margin-bottom:.3rem;}
-.edu-period{font-size:.83rem;color:var(--text-muted);}
-.edu-cgpa{display:inline-block;margin-top:.8rem;background:rgba(0,212,255,.1);color:var(--primary);padding:.2rem .7rem;border-radius:20px;font-size:.8rem;font-weight:600;}
-#achievements{background:var(--bg2);}
-.achievements-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:3rem;}
-.achievement-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;text-align:center;transition:.3s;}
-.achievement-card:hover{border-color:var(--accent);transform:translateY(-4px);}
-.achievement-icon{font-size:2rem;margin-bottom:.8rem;}
-.achievement-title{font-weight:700;font-size:.95rem;margin-bottom:.4rem;}
-.achievement-desc{font-size:.85rem;color:var(--text-muted);}
-#contact{background:var(--bg);text-align:center;}
-.contact-inner{max-width:700px;margin:0 auto;}
-.contact-inner p{color:var(--text-muted);font-size:1.05rem;margin-bottom:2.5rem;}
-.contact-cards{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem;}
-.contact-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.2rem 1.8rem;display:flex;align-items:center;gap:.8rem;transition:.3s;color:var(--text);}
-.contact-card:hover{border-color:var(--primary);color:var(--primary);}
-footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--text-muted);font-size:.85rem;}
-footer span{color:var(--primary);}
-@media(max-width:768px){.nav-links{display:none;}.about-grid{grid-template-columns:1fr;}.hero-stats{gap:1.5rem;}}
-.fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s;}
-.fade-in.visible{opacity:1;transform:translateY(0);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#16a34a;
+  --green-light:#4ade80;
+  --green-dim:#052e16;
+  --dark:#0a0a0a;
+  --dark2:#111111;
+  --dark3:#1a1a1a;
+  --border:#2a2a2a;
+  --text:#e5e5e5;
+  --muted:#888;
+  --accent:#f59e0b;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--dark);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;border-bottom:1px solid var(--border);background:rgba(10,10,10,0.92);backdrop-filter:blur(12px)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-size:1.1rem;font-weight:700;letter-spacing:-0.02em;color:var(--text)}
+.nav-logo span{color:var(--green-light)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{font-size:0.875rem;color:var(--muted);transition:color 0.2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{font-size:0.8rem;background:var(--green);color:#fff;padding:6px 16px;border-radius:6px;font-weight:500;transition:background 0.2s}
+.nav-cta:hover{background:#15803d}
+#hero{padding:140px 24px 80px;max-width:1100px;margin:0 auto}
+.hero-label{display:inline-block;font-size:0.72rem;font-family:'JetBrains Mono',monospace;color:var(--green-light);letter-spacing:0.1em;text-transform:uppercase;border:1px solid #16a34a44;padding:4px 12px;border-radius:4px;margin-bottom:28px}
+.hero-headline{font-size:clamp(2.4rem,5vw,4rem);font-weight:700;line-height:1.1;letter-spacing:-0.03em;margin-bottom:20px}
+.hero-headline .line2{color:var(--green-light)}
+.hero-sub{font-size:1.05rem;color:var(--muted);max-width:560px;margin-bottom:40px;line-height:1.7}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{background:var(--green);color:#fff;padding:11px 24px;border-radius:8px;font-size:0.9rem;font-weight:500;transition:all 0.2s}
+.btn-primary:hover{background:#15803d;transform:translateY(-1px)}
+.btn-outline{border:1px solid var(--border);color:var(--text);padding:11px 24px;border-radius:8px;font-size:0.9rem;transition:all 0.2s}
+.btn-outline:hover{border-color:#555;transform:translateY(-1px)}
+.hero-stats{display:flex;gap:48px;margin-top:72px;padding-top:40px;border-top:1px solid var(--border);flex-wrap:wrap}
+.stat-num{font-size:1.8rem;font-weight:700;letter-spacing:-0.03em;color:var(--text)}
+.stat-num span{color:var(--green-light)}
+.stat-label{font-size:0.78rem;color:var(--muted);margin-top:2px}
+section{padding:80px 24px}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-tag{font-size:0.72rem;font-family:'JetBrains Mono',monospace;color:var(--green-light);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px}
+.section-title{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700;letter-spacing:-0.02em;margin-bottom:12px}
+.section-desc{color:var(--muted);max-width:560px;font-size:0.95rem;line-height:1.7;margin-bottom:48px}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--border)}
+.card{background:var(--dark2);padding:28px;transition:background 0.2s}
+.card:hover{background:var(--dark3)}
+.card-icon{width:36px;height:36px;border-radius:8px;background:var(--green-dim);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.1rem}
+.card-title{font-size:0.95rem;font-weight:600;margin-bottom:8px}
+.card-desc{font-size:0.83rem;color:var(--muted);line-height:1.6}
+.card-tag{display:inline-block;font-size:0.68rem;font-family:'JetBrains Mono',monospace;color:var(--green-light);border:1px solid #16a34a33;padding:3px 8px;border-radius:4px;margin-top:14px;text-transform:uppercase;letter-spacing:0.05em}
+.divider{border:none;border-top:1px solid var(--border);margin:0 24px}
+.founder-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:64px;align-items:start}
+.founder-name{font-size:1.5rem;font-weight:700;letter-spacing:-0.02em}
+.founder-handle{font-size:0.83rem;color:var(--green-light);font-family:'JetBrains Mono',monospace;margin-top:4px;margin-bottom:24px}
+.founder-bio-short{font-size:0.88rem;color:var(--muted);line-height:1.7;margin-bottom:14px}
+.founder-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+.chip{font-size:0.73rem;background:var(--dark3);border:1px solid var(--border);padding:4px 10px;border-radius:20px;color:var(--muted)}
+.founder-links{display:flex;gap:12px}
+.fl-btn{font-size:0.8rem;border:1px solid var(--border);padding:7px 16px;border-radius:6px;color:var(--muted);transition:all 0.2s}
+.fl-btn:hover{border-color:#555;color:var(--text)}
+.exp-item{border-left:2px solid var(--border);padding-left:20px;margin-bottom:28px;position:relative}
+.exp-item::before{content:'';position:absolute;left:-5px;top:6px;width:8px;height:8px;background:var(--green);border-radius:50%}
+.exp-company{font-size:0.72rem;color:var(--green-light);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
+.exp-role{font-size:0.95rem;font-weight:600}
+.exp-meta{font-size:0.78rem;color:var(--muted);margin-top:2px}
+.edu-row{display:flex;gap:16px;margin-top:32px;flex-wrap:wrap}
+.edu-item{background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:14px 18px;flex:1;min-width:160px}
+.edu-deg{font-size:0.83rem;font-weight:600}
+.edu-school{font-size:0.75rem;color:var(--green-light);font-family:'JetBrains Mono',monospace;margin-top:2px}
+.edu-detail{font-size:0.73rem;color:var(--muted);margin-top:4px}
+.roadmap-list{display:flex;flex-direction:column;gap:0}
+.roadmap-item{display:grid;grid-template-columns:120px 1fr;gap:32px;padding:24px 0;border-bottom:1px solid var(--border);align-items:start}
+.roadmap-item:last-child{border-bottom:none}
+.rm-status{font-size:0.72rem;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.05em;padding:4px 10px;border-radius:4px;display:inline-block;text-align:center}
+.rm-status.building{background:#052e16;color:var(--green-light);border:1px solid #16a34a55}
+.rm-status.exploring{background:#1c1917;color:#a78bfa;border:1px solid #7c3aed44}
+.rm-status.planned{background:#1a1a1a;color:var(--muted);border:1px solid var(--border)}
+.rm-title{font-size:1rem;font-weight:600;margin-bottom:6px}
+.rm-desc{font-size:0.85rem;color:var(--muted);line-height:1.6}
+.skills-cols{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:24px}
+.sg-label{font-size:0.72rem;font-family:'JetBrains Mono',monospace;color:var(--green-light);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px}
+.sg-tags{display:flex;flex-wrap:wrap;gap:6px}
+.sg-tag{font-size:0.75rem;background:var(--dark3);border:1px solid var(--border);padding:4px 10px;border-radius:4px;color:var(--text)}
+.contact-inner{max-width:600px}
+.contact-title{font-size:2rem;font-weight:700;letter-spacing:-0.03em;margin-bottom:12px}
+.contact-sub{color:var(--muted);margin-bottom:36px;font-size:0.95rem;line-height:1.7}
+.contact-links{display:flex;gap:16px;flex-wrap:wrap}
+.contact-link{display:flex;align-items:center;gap:8px;font-size:0.85rem;border:1px solid var(--border);padding:10px 18px;border-radius:8px;transition:all 0.2s;color:var(--muted)}
+.contact-link:hover{border-color:#555;color:var(--text)}
+footer{border-top:1px solid var(--border);padding:28px 24px;max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-left{font-size:0.8rem;color:var(--muted)}
+.footer-left strong{color:var(--text)}
+.footer-right{font-size:0.75rem;color:#555;font-family:'JetBrains Mono',monospace}
+@media(max-width:720px){.founder-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.nav-links{display:none}.hero-stats{gap:28px}.roadmap-item{grid-template-columns:1fr;gap:8px}}
 </style>
 </head>
 <body>
+
 <nav>
-  <div class="nav-logo">TeJ &#9889;</div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  <div class="nav-inner">
+    <div class="nav-logo">TeJ <span>Energy</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#founder">Founder</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:jangampallitejendra@gmail.com" class="nav-cta">Get in Touch</a>
+  </div>
 </nav>
-<section id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
-  <div class="hero-content">
-    <div class="hero-badge">&#9889; Manager R&amp;D &amp; Technology | Battery Energy Storage Systems</div>
-    <h1><span class="hero-name">Tejendra J</span><br/><span style="font-size:.65em;color:var(--text-muted);">(TeJ)</span></h1>
-    <p class="hero-title">Manager R&amp;D at <span>Cospowers New Energy Pvt. Ltd.</span></p>
-    <div class="hero-location">&#128205; Hyderabad, Telangana, India &nbsp;|&nbsp; IIT Hyderabad &nbsp;|&nbsp; IIT Dharwad</div>
-    <div class="hero-tags">
-      <span class="hero-tag">&#9889; Li-ion Battery Lifecycle</span>
-      <span class="hero-tag">&#128267; BESS Systems</span>
-      <span class="hero-tag">&#128013; Python Analytics</span>
-      <span class="hero-tag">&#128300; Electrochemistry</span>
-      <span class="hero-tag">&#9851; Circular Economy</span>
-      <span class="hero-tag">&#128202; Data Analytics</span>
+
+<div style="max-width:1100px;margin:0 auto">
+<section id="hero" style="padding:140px 24px 80px">
+  <div class="hero-label">// AI x Battery Technology Startup</div>
+  <h1 class="hero-headline">
+    Where Artificial Intelligence<br>
+    <span class="line2">meets Battery Technology.</span>
+  </h1>
+  <p class="hero-sub">TeJ Energy is building the bridge between AI and energy storage. Smarter diagnostics, predictive analytics, and intelligent systems for the battery industry.</p>
+  <div class="hero-actions">
+    <a href="#products" class="btn-primary">See What We're Building</a>
+    <a href="#founder" class="btn-outline">Meet the Founder</a>
+  </div>
+  <div class="hero-stats">
+    <div>
+      <div class="stat-num">1.5<span>L+</span></div>
+      <div class="stat-label">Telecom towers analyzed</div>
     </div>
-    <div class="hero-cta">
-      <a class="btn-primary" href="#contact">Get In Touch</a>
-      <a class="btn-secondary" href="https://www.linkedin.com/in/tejendraj/" target="_blank">LinkedIn Profile</a>
+    <div>
+      <div class="stat-num">40<span>+</span></div>
+      <div class="stat-label">Python analytics scripts</div>
     </div>
-    <div class="hero-stats">
-      <div class="stat"><div class="stat-num">1,50,000+</div><div class="stat-label">Telecom Towers Analyzed</div></div>
-      <div class="stat"><div class="stat-num">40+</div><div class="stat-label">Python Scripts Built</div></div>
-      <div class="stat"><div class="stat-num">20 MWh</div><div class="stat-label">Max BESS Project Scale</div></div>
-      <div class="stat"><div class="stat-num">9.39/10</div><div class="stat-label">M.Tech CGPA</div></div>
+    <div>
+      <div class="stat-num">20<span>MWh</span></div>
+      <div class="stat-label">BESS project scale</div>
+    </div>
+    <div>
+      <div class="stat-num">9.39<span>/10</span></div>
+      <div class="stat-label">M.Tech CGPA, IIT Hyderabad</div>
     </div>
   </div>
 </section>
+</div>
+
+<hr class="divider"/>
+
 <section id="about">
-  <div class="container">
-    <span class="section-tag">About Me</span>
-    <h2 class="section-title">Powering the Clean Energy Transition</h2>
-    <div class="about-grid fade-in">
-      <div class="about-text">
-        <p>I'm TeJ &mdash; a battery engineer and R&amp;D manager working at the intersection of <strong>electrochemistry, data analytics, and large-scale energy storage</strong>. At Cospowers New Energy, I lead R&amp;D on Li-ion battery systems from cell-level science to fleet-scale deployments.</p>
-        <p>My work spans <strong>OCV-IR characterization, EIS testing, C-rate profiling</strong>, and multi-year degradation analysis across India's telecom infrastructure. I've built a Python-based analytics platform with 40+ scripts driving productivity and customer SLA management.</p>
-        <p>I'm deeply passionate about <strong>second-life battery applications, circular economy strategies</strong>, and next-generation solid-state battery research &mdash; bridging fundamental science with commercial-scale impact.</p>
-        <p>Open to collaborations, research partnerships, technical discussions, and industry connections in the energy storage space.</p>
+  <div class="section-inner">
+    <div class="section-tag">// what is tej energy</div>
+    <h2 class="section-title">AI-powered thinking<br>for a battery-powered world.</h2>
+    <p class="section-desc">We are not just working on batteries. We're wiring AI into every layer of how batteries are understood, tested, managed, and extended — from cell chemistry to fleet-scale deployments.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">&#129504;</div>
+        <div class="card-title">Battery Digital Twins</div>
+        <div class="card-desc">AI models that mirror real battery behavior in software — predicting degradation, thermal anomalies, and end-of-life before they happen in hardware.</div>
+        <div class="card-tag">In Development</div>
       </div>
-      <div class="about-highlights">
-        <div class="highlight-card">
-          <h4>&#128300; Research Foundation</h4>
-          <p>M.Tech thesis on DFT-based computational modeling of electrode/electrolyte interfaces in All-Solid-State Batteries (ASSBs) using PARAM SEVA supercomputing facility.</p>
+      <div class="card">
+        <div class="card-icon">&#128202;</div>
+        <div class="card-title">Predictive Analytics Platform</div>
+        <div class="card-desc">Fleet-scale SOH tracking across thousands of batteries using ML pipelines built on real telecom and BESS deployment data.</div>
+        <div class="card-tag">Core Capability</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#9879;</div>
+        <div class="card-title">AI-Driven Materials Research</div>
+        <div class="card-desc">Using machine learning to explore electrode and electrolyte chemistries — accelerating discovery of safer, higher-density battery materials.</div>
+        <div class="card-tag">Research Track</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#9851;</div>
+        <div class="card-title">Second-Life Battery Intelligence</div>
+        <div class="card-desc">AI-powered grading and routing systems for retired battery packs — extending value through smart repurposing in grid storage and industrial use.</div>
+        <div class="card-tag">Circular Economy</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#9889;</div>
+        <div class="card-title">Smart Grid and V2G Optimization</div>
+        <div class="card-desc">Intelligent dispatching for battery fleets and EV infrastructure — reading energy markets and weather in real time to decide when to charge, store, or sell back.</div>
+        <div class="card-tag">Coming Soon</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#127981;</div>
+        <div class="card-title">Manufacturing Yield AI</div>
+        <div class="card-desc">ML monitoring for gigafactory production lines — catching defects in coating thickness, slurry mixing, and cell formation before they become failures at scale.</div>
+        <div class="card-tag">Coming Soon</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<section id="products">
+  <div class="section-inner">
+    <div class="section-tag">// products</div>
+    <h2 class="section-title">Things we're building.</h2>
+    <p class="section-desc">Early-stage but grounded in real engineering. Each product comes from hands-on work with actual battery systems and data.</p>
+    <div class="roadmap-list">
+      <div class="roadmap-item">
+        <div><span class="rm-status building">Building</span></div>
+        <div>
+          <div class="rm-title">BattSight — Battery Analytics Dashboard</div>
+          <div class="rm-desc">Python-native analytics platform for Li-ion fleet health monitoring. OCV-IR trending, SOH decay curves, thermal event detection. Built on 96+ real dashboards from Cospowers deployments.</div>
         </div>
-        <div class="highlight-card">
-          <h4>&#9889; Fleet-Scale Analytics</h4>
-          <p>Analyzed SOH degradation across 1,50,000+ India telecom towers. Built 96+ engineering dashboards using pandas, matplotlib, and plotly.</p>
+      </div>
+      <div class="roadmap-item">
+        <div><span class="rm-status building">Building</span></div>
+        <div>
+          <div class="rm-title">CycleIQ — Parallel Battery Validation Tool</div>
+          <div class="rm-desc">Automated test suite for mixed-capacity, mixed-generation LFP paralleling. Flags unsafe combinations using data-driven thresholds from 100+ cycle validation studies.</div>
         </div>
-        <div class="highlight-card">
-          <h4>&#128221; White Papers &amp; Standards</h4>
-          <p>Authored technical white papers on parallel battery operation and Li-ion lifecycle guidelines aligned with IEC, UL, and IEEE standards.</p>
+      </div>
+      <div class="roadmap-item">
+        <div><span class="rm-status exploring">Exploring</span></div>
+        <div>
+          <div class="rm-title">TwinCell — Battery Digital Twin Engine</div>
+          <div class="rm-desc">Physics-informed ML model that ingests raw sensor data and builds a live digital twin of each battery cell — predicting remaining useful life and failure modes in real time.</div>
         </div>
-        <div class="highlight-card">
-          <h4>&#127760; 10K+ Professional Network</h4>
-          <p>Active thought leader in the battery and energy storage community with a 10,000+ strong LinkedIn network.</p>
+      </div>
+      <div class="roadmap-item">
+        <div><span class="rm-status exploring">Exploring</span></div>
+        <div>
+          <div class="rm-title">Refurb.AI — Second-Life Grading System</div>
+          <div class="rm-desc">AI-assisted diagnostic pipeline for retired EV and telecom batteries. Grades packs for second-use routing — residential storage, industrial backup, or responsible recycling.</div>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div><span class="rm-status planned">Planned</span></div>
+        <div>
+          <div class="rm-title">GridSense — V2G and BESS Dispatch Optimizer</div>
+          <div class="rm-desc">Real-time AI dispatcher for battery energy storage systems and EV fleets. Reads live market prices, weather, and load data to optimize charge and discharge decisions automatically.</div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section id="experience">
-  <div class="container">
-    <span class="section-tag">Experience</span>
-    <h2 class="section-title">Professional Journey</h2>
-    <p class="section-subtitle">Building next-generation energy storage solutions at scale.</p>
-    <div class="exp-timeline fade-in">
-      <div class="exp-item">
-        <div class="exp-company">Cospowers New Energy Pvt. Ltd.</div>
-        <div class="exp-role">Manager &ndash; R&amp;D and Technology</div>
-        <div class="exp-period">&#128197; April 2025 &ndash; Present &nbsp;|&nbsp; Hyderabad</div>
-        <ul class="exp-bullets">
-          <li>Leading R&amp;D and engineering initiatives across BESS, Li-ion battery lifecycle management, battery analytics, and telecom energy infrastructure.</li>
-          <li>Led execution of multi-MWh BESS projects including commissioning, validation, troubleshooting, FAT coordination with Chinese OEMs, and engineering documentation.</li>
-          <li>Built a Python-based battery analytics ecosystem using pandas, matplotlib, plotly, and Jupyter notebooks &mdash; 40+ scripts, 96+ dashboards.</li>
-          <li>Conducted Root Cause Analysis (RCA), incident reviews, and technical recovery planning for large-scale deployments.</li>
-          <li>Evaluated utility-scale BESS tenders ranging from 5 kWh to 20 MWh; developed battery + inverter sizing methodologies.</li>
-          <li>Authored technical white papers on safe Li-ion battery operation and lifecycle management standards.</li>
-          <li>Conducted 100+ cycle validation studies on mixed-capacity and mixed-generation LFP battery paralleling.</li>
-          <li>Designed and executed OCV-IR characterization, C-rate profiling, thermal cycling, and degradation analysis.</li>
-          <li>Managed strategic technical accounts across telecom, renewable energy, and industrial infrastructure sectors.</li>
-          <li>Coordinated with international OEMs for FAT inspections, protocol verification, and technical submissions.</li>
-        </ul>
+
+<hr class="divider"/>
+
+<section id="services">
+  <div class="section-inner">
+    <div class="section-tag">// services</div>
+    <h2 class="section-title">How we work with you.</h2>
+    <p class="section-desc">Deep technical work, not surface-level consulting. We bring real hands-on BESS and AI experience to your specific problem.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">&#128300;</div>
+        <div class="card-title">Battery Testing and Characterization</div>
+        <div class="card-desc">OCV-IR, EIS, C-rate profiling, thermal cycling, degradation analysis. We run the tests and deliver engineering-grade reports your team can act on.</div>
       </div>
-      <div class="exp-item">
-        <div class="exp-company">Cospowers New Energy Pvt. Ltd.</div>
-        <div class="exp-role">Assistant Manager</div>
-        <div class="exp-period">&#128197; August 2024 &ndash; June 2025 &nbsp;|&nbsp; Hyderabad</div>
-        <ul class="exp-bullets">
-          <li>Developed Python automation tools for cell sorting, ACIR-OCV data processing, and battery performance analysis.</li>
-          <li>Managed large-scale battery retest programs involving 1,800+ test data files across multi-channel configurations.</li>
-          <li>Conducted thermal testing and validation of Li-ion modules across low-temperature and elevated-temperature conditions.</li>
-          <li>Initiated LFP battery refurbishment and second-life application strategy frameworks aligned with IEC, UL, and IEEE standards.</li>
-          <li>Integrated AI-driven and GenAI-based tools into workflow optimization and engineering analytics processes.</li>
-          <li>Contributed to circular economy initiatives through battery refurbishment and reuse-oriented engineering strategies.</li>
-        </ul>
+      <div class="card">
+        <div class="card-icon">&#128013;</div>
+        <div class="card-title">Custom Python Analytics</div>
+        <div class="card-desc">End-to-end analytics pipelines for your battery data. From raw BMS exports to dashboards, automated anomaly alerts, and SOH reports.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128208;</div>
+        <div class="card-title">BESS Sizing and Tender Support</div>
+        <div class="card-desc">Battery plus inverter sizing methodology, BESS tender evaluation, and documentation for projects from 5 kWh to 20 MWh scale.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128221;</div>
+        <div class="card-title">Technical White Papers</div>
+        <div class="card-desc">Standards-aligned documentation — parallel battery operation guidelines, lifecycle management policies, and safety protocols per IEC, UL, and IEEE standards.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#129302;</div>
+        <div class="card-title">GenAI Workflow Integration</div>
+        <div class="card-desc">Bringing AI tools into your engineering workflows — automated report generation, LLM-assisted RCA, failure documentation, and knowledge capture.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128279;</div>
+        <div class="card-title">OEM Technical Liaison</div>
+        <div class="card-desc">FAT coordination, protocol verification, and technical submissions with Chinese and international battery OEMs. We speak the language on both sides.</div>
       </div>
     </div>
   </div>
 </section>
+
+<hr class="divider"/>
+
+<section id="tools">
+  <div class="section-inner">
+    <div class="section-tag">// tools</div>
+    <h2 class="section-title">Open resources and tools.</h2>
+    <p class="section-desc">Scripts, calculators, and reference tools we are gradually making available — built for battery engineers and energy storage teams.</p>
+    <div class="roadmap-list">
+      <div class="roadmap-item">
+        <div><span class="rm-status building">Live Soon</span></div>
+        <div>
+          <div class="rm-title">BESS Sizing Calculator</div>
+          <div class="rm-desc">Input your load profile, get battery plus inverter sizing recommendations. Built on real tender evaluation methodology from utility-scale projects.</div>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div><span class="rm-status building">Live Soon</span></div>
+        <div>
+          <div class="rm-title">Cell Compatibility Checker</div>
+          <div class="rm-desc">Check whether two battery cells are safe to parallel based on capacity, chemistry, and age — thresholds derived from 100+ LFP cycle validation studies.</div>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div><span class="rm-status exploring">In Progress</span></div>
+        <div>
+          <div class="rm-title">SOH Estimator — Python Notebook</div>
+          <div class="rm-desc">Open-source Jupyter notebook for estimating State of Health from OCV-IR data. Plug in your test data, get a degradation report and trend visualization.</div>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div><span class="rm-status planned">Planned</span></div>
+        <div>
+          <div class="rm-title">AI Battery Failure Pattern Library</div>
+          <div class="rm-desc">Searchable database of battery failure modes, RCA examples, and recommended remediation — built from real incident reviews and engineering documentation.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<section id="founder" style="background:var(--dark2)">
+  <div class="section-inner">
+    <div class="section-tag">// founder</div>
+    <div class="founder-grid">
+      <div>
+        <div class="founder-name">Tejendra J</div>
+        <div class="founder-handle">TeJ · Founder, TeJ Energy</div>
+        <p class="founder-bio-short">Battery engineer and R&amp;D manager working at the intersection of electrochemistry, AI, and large-scale energy storage.</p>
+        <p class="founder-bio-short">IIT Hyderabad (M.Tech, 9.39 CGPA) · IIT Dharwad (B.Tech Mech). Currently Manager R&amp;D at Cospowers New Energy, Hyderabad.</p>
+        <div class="founder-chips">
+          <span class="chip">Li-ion / LFP</span>
+          <span class="chip">BESS Systems</span>
+          <span class="chip">Python Analytics</span>
+          <span class="chip">DFT / ASSBs</span>
+          <span class="chip">EIS / OCV-IR</span>
+          <span class="chip">Circular Economy</span>
+          <span class="chip">GenAI Tools</span>
+          <span class="chip">10K+ LinkedIn</span>
+        </div>
+        <div class="founder-links">
+          <a href="https://linkedin.com/in/tejendraj" target="_blank" class="fl-btn">LinkedIn</a>
+          <a href="mailto:jangampallitejendra@gmail.com" class="fl-btn">Email</a>
+        </div>
+      </div>
+      <div>
+        <div class="exp-item">
+          <div class="exp-company">Cospowers New Energy Pvt. Ltd.</div>
+          <div class="exp-role">Manager — R&amp;D and Technology</div>
+          <div class="exp-meta">Apr 2025 – Present · Hyderabad</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-company">Cospowers New Energy Pvt. Ltd.</div>
+          <div class="exp-role">Assistant Manager</div>
+          <div class="exp-meta">Aug 2024 – Jun 2025 · Hyderabad</div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-company">Research — IIT Hyderabad</div>
+          <div class="exp-role">M.Tech Thesis: DFT Modeling of Solid-State Battery Interfaces</div>
+          <div class="exp-meta">PARAM SEVA supercomputer · MoE Fellowship · Academic Excellence Award</div>
+        </div>
+        <div class="edu-row">
+          <div class="edu-item">
+            <div class="edu-deg">M.Tech — Energy Science</div>
+            <div class="edu-school">IIT Hyderabad</div>
+            <div class="edu-detail">2022–2024 · CGPA 9.39/10</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-deg">B.Tech — Mech. Engg.</div>
+            <div class="edu-school">IIT Dharwad</div>
+            <div class="edu-detail">2016–2020</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
 <section id="skills">
-  <div class="container">
-    <span class="section-tag">Expertise</span>
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="skills-grid fade-in">
-      <div class="skill-category">
-        <h3>&#128267; Battery Technology</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">LFP</span><span class="skill-tag">Li-ion</span><span class="skill-tag">BESS</span><span class="skill-tag">OCV-IR</span><span class="skill-tag">EIS</span><span class="skill-tag">C-rate Profiling</span><span class="skill-tag">SOH Analysis</span><span class="skill-tag">Thermal Cycling</span><span class="skill-tag">BMS Data Analysis</span><span class="skill-tag">Cell Sorting</span>
+  <div class="section-inner">
+    <div class="section-tag">// technical stack</div>
+    <h2 class="section-title">What we work with.</h2>
+    <p class="section-desc" style="margin-bottom:36px">The battery science, software, and systems stack behind TeJ Energy.</p>
+    <div class="skills-cols">
+      <div>
+        <div class="sg-label">Battery Tech</div>
+        <div class="sg-tags">
+          <span class="sg-tag">LFP</span><span class="sg-tag">Li-ion</span><span class="sg-tag">BESS</span><span class="sg-tag">OCV-IR</span><span class="sg-tag">EIS</span><span class="sg-tag">C-rate</span><span class="sg-tag">SOH Analysis</span><span class="sg-tag">Thermal Cycling</span><span class="sg-tag">BMS Data</span>
         </div>
       </div>
-      <div class="skill-category">
-        <h3>&#128013; Programming &amp; Analytics</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Python</span><span class="skill-tag">Pandas</span><span class="skill-tag">Matplotlib</span><span class="skill-tag">Plotly</span><span class="skill-tag">Jupyter Notebooks</span><span class="skill-tag">Data Visualization</span><span class="skill-tag">Automation Scripts</span><span class="skill-tag">GenAI Tools</span>
+      <div>
+        <div class="sg-label">AI and Software</div>
+        <div class="sg-tags">
+          <span class="sg-tag">Python</span><span class="sg-tag">Pandas</span><span class="sg-tag">Matplotlib</span><span class="sg-tag">Plotly</span><span class="sg-tag">Jupyter</span><span class="sg-tag">GenAI Tools</span><span class="sg-tag">ML Pipelines</span>
         </div>
       </div>
-      <div class="skill-category">
-        <h3>&#9889; BESS &amp; Projects</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">BESS Commissioning</span><span class="skill-tag">FAT Coordination</span><span class="skill-tag">Tender Management</span><span class="skill-tag">RCA</span><span class="skill-tag">SOW Documentation</span><span class="skill-tag">OEM Coordination</span><span class="skill-tag">5kWh&ndash;20MWh Scale</span>
+      <div>
+        <div class="sg-label">BESS and Projects</div>
+        <div class="sg-tags">
+          <span class="sg-tag">Commissioning</span><span class="sg-tag">FAT Coordination</span><span class="sg-tag">Tender Evaluation</span><span class="sg-tag">RCA</span><span class="sg-tag">5kWh–20MWh</span>
         </div>
       </div>
-      <div class="skill-category">
-        <h3>&#128300; Research &amp; Standards</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">DFT Modeling</span><span class="skill-tag">ASSBs</span><span class="skill-tag">IEC Standards</span><span class="skill-tag">UL Standards</span><span class="skill-tag">IEEE Standards</span><span class="skill-tag">White Papers</span><span class="skill-tag">Circular Economy</span><span class="skill-tag">Battery Refurbishment</span>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h3>&#127757; Languages</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">English (Professional)</span><span class="skill-tag">Telugu (Native)</span><span class="skill-tag">Hindi (Professional)</span>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h3>&#129309; Leadership</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Cross-functional Teams</span><span class="skill-tag">Account Management</span><span class="skill-tag">Standards Compliance</span><span class="skill-tag">Technical Strategy</span><span class="skill-tag">FAT &amp; Compliance</span>
+      <div>
+        <div class="sg-label">Research</div>
+        <div class="sg-tags">
+          <span class="sg-tag">DFT Modeling</span><span class="sg-tag">ASSBs</span><span class="sg-tag">IEC Standards</span><span class="sg-tag">UL</span><span class="sg-tag">IEEE</span><span class="sg-tag">White Papers</span><span class="sg-tag">Circular Economy</span>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section id="education">
-  <div class="container">
-    <span class="section-tag">Education</span>
-    <h2 class="section-title">Academic Excellence</h2>
-    <div class="edu-grid fade-in">
-      <div class="edu-card">
-        <div style="font-size:2.5rem;margin-bottom:1rem;">&#127891;</div>
-        <div class="edu-degree">Master of Technology (M.Tech)</div>
-        <div class="edu-school">IIT Hyderabad</div>
-        <div class="edu-period">Energy Science &amp; Technology &nbsp;|&nbsp; 2022 &ndash; 2024</div>
-        <div class="edu-cgpa">CGPA: 9.39 / 10</div>
-        <p style="margin-top:.8rem;font-size:.85rem;color:var(--text-muted);">Thesis: DFT-based Computational Modeling of Electrode/Electrolyte Interface in All-Solid-State Batteries using PARAM SEVA supercomputing. Academic Excellence Award | MoE Fellowship.</p>
-      </div>
-      <div class="edu-card">
-        <div style="font-size:2.5rem;margin-bottom:1rem;">&#9881;</div>
-        <div class="edu-degree">Bachelor of Technology (B.Tech)</div>
-        <div class="edu-school">IIT Dharwad</div>
-        <div class="edu-period">Mechanical Engineering &nbsp;|&nbsp; 2016 &ndash; 2020</div>
-        <p style="margin-top:.8rem;font-size:.85rem;color:var(--text-muted);">Foundation in mechanical and thermal engineering principles underpinning battery system design and energy storage.</p>
-      </div>
-      <div class="edu-card">
-        <div style="font-size:2.5rem;margin-bottom:1rem;">&#128218;</div>
-        <div class="edu-degree">Class XII &ndash; PCM</div>
-        <div class="edu-school">Jawahar Navodaya Vidyalaya (JNV)</div>
-        <div class="edu-period">2015 &ndash; 2016</div>
-      </div>
-      <div class="edu-card">
-        <div style="font-size:2.5rem;margin-bottom:1rem;">&#127979;</div>
-        <div class="edu-degree">Class X</div>
-        <div class="edu-school">Jawahar Navodaya Vidyalaya (JNV)</div>
-        <div class="edu-period">2013 &ndash; 2014</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="achievements">
-  <div class="container" style="text-align:center;">
-    <span class="section-tag">Honors &amp; Awards</span>
-    <h2 class="section-title">Achievements</h2>
-    <div class="achievements-grid fade-in">
-      <div class="achievement-card">
-        <div class="achievement-icon">&#127942;</div>
-        <div class="achievement-title">Academic Excellence Award</div>
-        <div class="achievement-desc">Awarded for outstanding academic performance during M.Tech at IIT Hyderabad.</div>
-      </div>
-      <div class="achievement-card">
-        <div class="achievement-icon">&#127894;</div>
-        <div class="achievement-title">MoE Fellowship</div>
-        <div class="achievement-desc">Ministry of Education Fellowship recipient for M.Tech studies at IIT Hyderabad.</div>
-      </div>
-      <div class="achievement-card">
-        <div class="achievement-icon">&#129302;</div>
-        <div class="achievement-title">Freedom With AI Masterclass</div>
-        <div class="achievement-desc">Certificate of Achievement in AI tools and automation for engineering workflows.</div>
-      </div>
-      <div class="achievement-card">
-        <div class="achievement-icon">&#127760;</div>
-        <div class="achievement-title">10K+ LinkedIn Network</div>
-        <div class="achievement-desc">Built a 10,000+ strong professional network in the battery and energy storage domain.</div>
-      </div>
-    </div>
-  </div>
-</section>
+
+<hr class="divider"/>
+
 <section id="contact">
-  <div class="container">
-    <div class="contact-inner fade-in">
-      <span class="section-tag">Contact</span>
-      <h2 class="section-title">Let's Connect</h2>
-      <p>Open to collaborations, research partnerships, technical discussions, and industry connections in battery technology and energy storage.</p>
-      <div class="contact-cards">
-        <a class="contact-card" href="mailto:jangampallitejendra@gmail.com">
-          <span style="font-size:1.4rem;">&#9993;</span>
-          <span>jangampallitejendra@gmail.com</span>
-        </a>
-        <a class="contact-card" href="https://www.linkedin.com/in/tejendraj/" target="_blank">
-          <span style="font-size:1.4rem;">&#128188;</span>
-          <span>linkedin.com/in/tejendraj</span>
-        </a>
-        <a class="contact-card" href="https://iith.ac.in" target="_blank">
-          <span style="font-size:1.4rem;">&#127891;</span>
-          <span>IIT Hyderabad</span>
-        </a>
+  <div class="section-inner">
+    <div class="contact-inner">
+      <div class="section-tag">// contact</div>
+      <h2 class="contact-title">Let's talk batteries and AI.</h2>
+      <p class="contact-sub">Whether you're working on BESS, EV, second-life batteries, or want to explore what AI can do for your energy storage operations — reach out. Always happy to connect.</p>
+      <div class="contact-links">
+        <a href="mailto:jangampallitejendra@gmail.com" class="contact-link"><span>&#9993;</span> jangampallitejendra@gmail.com</a>
+        <a href="https://linkedin.com/in/tejendraj" target="_blank" class="contact-link"><span>&#128188;</span> linkedin.com/in/tejendraj</a>
       </div>
     </div>
   </div>
 </section>
+
 <footer>
-  <p>&copy; 2026 <span>Tejendra J (TeJ)</span> &nbsp;|&nbsp; Manager R&amp;D &amp; Technology &nbsp;|&nbsp; Hosted free on GitHub Pages</p>
+  <div class="footer-left"><strong>TeJ Energy</strong> — AI x Battery Technology. Hyderabad, India.</div>
+  <div class="footer-right">2026 · hosted on GitHub Pages</div>
 </footer>
-<script>
-const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1});
-document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
-</script>
+
 </body>
-</html>
+  </html>
