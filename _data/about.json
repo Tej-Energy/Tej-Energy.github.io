@@ -1,0 +1,14 @@
+{
+  "tag": "// what is tej energy",
+  "title1": "AI-powered thinking",
+  "title2": "for a battery-powered world.",
+  "desc": "We are not just working on batteries. We're wiring AI into every layer of how batteries are understood, tested, managed, and extended.",
+  "cards": [
+    {"icon": "🧠", "title": "Battery Digital Twins", "desc": "AI models that mirror real battery behavior in software, predicting degradation and end-of-life before they happen in hardware.", "tag": "In Development"},
+    {"icon": "📊", "title": "Predictive Analytics Platform", "desc": "Fleet-scale SOH tracking across thousands of batteries using ML pipelines built on real telecom and BESS deployment data.", "tag": "Core Capability"},
+    {"icon": "⚗", "title": "AI-Driven Materials Research", "desc": "Using machine learning to explore electrode and electrolyte chemistries and accelerate discovery of safer, higher-density battery materials.", "tag": "Research Track"},
+    {"icon": "♻", "title": "Second-Life Battery Intelligence", "desc": "AI-powered grading and routing for retired battery packs, extending value through smart repurposing in grid storage and industrial use.", "tag": "Circular Economy"},
+    {"icon": "⚡", "title": "Smart Grid and V2G Optimization", "desc": "Intelligent dispatching for battery fleets and EV infrastructure, reading energy markets and weather in real time to optimize charge decisions.", "tag": "Coming Soon"},
+    {"icon": "🏭", "title": "Manufacturing Yield AI", "desc": "ML monitoring for gigafactory production lines, catching defects in coating thickness and cell formation before they become failures at scale.", "tag": "Coming Soon"}
+  ]
+}
