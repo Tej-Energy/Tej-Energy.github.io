@@ -6,11 +6,68 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "site_content"
-    label: "Website Content"
+  - name: "hero"
+    label: "Hero Section"
     files:
-      - name: "homepage"
-        label: "Homepage"
-        file: "index.html"
+      - name: "hero"
+        label: "Hero Text"
+        file: "_data/hero.json"
         fields:
-          - {label: "Raw HTML", name: "body", widget: "code", default_language: "html"}
+          - {label: "Main Headline Line 1", name: "headline1", widget: "string", default: "Where Artificial Intelligence"}
+          - {label: "Main Headline Line 2 (gold)", name: "headline2", widget: "string", default: "meets Battery Technology."}
+          - {label: "Subtext", name: "subtext", widget: "text", default: "TeJ Energy is building the bridge between AI and energy storage."}
+          - {label: "Primary Button Text", name: "btn1", widget: "string", default: "Explore Our Tools"}
+          - {label: "Secondary Button Text", name: "btn2", widget: "string", default: "Meet the Founder"}
+
+  - name: "about"
+    label: "About Section"
+    files:
+      - name: "about"
+        label: "About Cards"
+        file: "_data/about.json"
+        fields:
+          - label: "Section Title"
+            name: "title"
+            widget: "string"
+            default: "AI-powered thinking for a battery-powered world."
+          - label: "Section Description"
+            name: "desc"
+            widget: "text"
+          - label: "Cards"
+            name: "cards"
+            widget: "list"
+            fields:
+              - {label: "Icon (emoji)", name: "icon", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "desc", widget: "text"}
+              - {label: "Tag", name: "tag", widget: "string"}
+
+  - name: "founder"
+    label: "Founder Section"
+    files:
+      - name: "founder"
+        label: "Founder Info"
+        file: "_data/founder.json"
+        fields:
+          - {label: "Name", name: "name", widget: "string", default: "Tejendra J"}
+          - {label: "Handle / Title", name: "handle", widget: "string", default: "TeJ · Founder, TeJ Energy"}
+          - {label: "Bio Line 1", name: "bio1", widget: "text"}
+          - {label: "Bio Line 2", name: "bio2", widget: "text"}
+          - {label: "LinkedIn URL", name: "linkedin", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - label: "Skill Chips"
+            name: "chips"
+            widget: "list"
+            field: {label: "Chip", name: "chip", widget: "string"}
+
+  - name: "contact"
+    label: "Contact Section"
+    files:
+      - name: "contact"
+        label: "Contact Info"
+        file: "_data/contact.json"
+        fields:
+          - {label: "Section Title", name: "title", widget: "string", default: "Let's talk batteries and AI."}
+          - {label: "Subtitle text", name: "sub", widget: "text"}
+          - {label: "Email Address", name: "email", widget: "string"}
+          - {label: "LinkedIn URL", name: "linkedin", widget: "string"}
