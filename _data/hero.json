@@ -1,0 +1,16 @@
+{
+  "label": "// AI x Battery Technology Startup",
+  "headline1": "Where Artificial Intelligence",
+  "headline2": "meets Battery Technology.",
+  "subtext": "TeJ Energy is building the bridge between AI and energy storage. Smarter diagnostics, predictive analytics, and intelligent systems for the battery industry.",
+  "btn1": "See What We're Building",
+  "btn1_link": "#products",
+  "btn2": "Meet the Founder",
+  "btn2_link": "#founder",
+  "stats": [
+    {"num": "1.5", "suffix": "L+", "label": "Telecom towers analyzed"},
+    {"num": "40", "suffix": "+", "label": "Python analytics scripts"},
+    {"num": "20", "suffix": "MWh", "label": "BESS project scale"},
+    {"num": "9.39", "suffix": "/10", "label": "M.Tech CGPA, IIT Hyderabad"}
+  ]
+}
