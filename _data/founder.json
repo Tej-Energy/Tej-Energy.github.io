@@ -1,0 +1,18 @@
+{
+  "name": "Tejendra J",
+  "handle": "TeJ · Founder, TeJ Energy",
+  "bio1": "Battery engineer and R&D manager at the intersection of electrochemistry, AI, and large-scale energy storage.",
+  "bio2": "IIT Hyderabad (M.Tech, 9.39 CGPA) · IIT Dharwad (B.Tech Mech). Currently Manager R&D at Cospowers New Energy, Hyderabad.",
+  "linkedin": "https://linkedin.com/in/tejendraj",
+  "email": "jangampallitejendra@gmail.com",
+  "chips": ["Li-ion / LFP", "BESS Systems", "Python Analytics", "DFT / ASSBs", "EIS / OCV-IR", "Circular Economy", "GenAI Tools", "10K+ LinkedIn"],
+  "experience": [
+    {"company": "Cospowers New Energy Pvt. Ltd.", "role": "Manager — R&D and Technology", "meta": "Apr 2025 – Present · Hyderabad"},
+    {"company": "Cospowers New Energy Pvt. Ltd.", "role": "Assistant Manager", "meta": "Aug 2024 – Jun 2025 · Hyderabad"},
+    {"company": "Research — IIT Hyderabad", "role": "M.Tech Thesis: DFT Modeling of Solid-State Battery Interfaces", "meta": "PARAM SEVA supercomputer · MoE Fellowship · Academic Excellence Award"}
+  ],
+  "education": [
+    {"degree": "M.Tech — Energy Science", "school": "IIT Hyderabad", "detail": "2022–2024 · CGPA 9.39/10"},
+    {"degree": "B.Tech — Mech. Engg.", "school": "IIT Dharwad", "detail": "2016–2020"}
+  ]
+}
