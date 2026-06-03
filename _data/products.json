@@ -1,0 +1,12 @@
+{
+  "tag": "// products",
+  "title": "Things we're building.",
+  "desc": "Early-stage but grounded in real engineering. Each product comes from hands-on work with actual battery systems and data.",
+  "items": [
+    {"title": "BattSight — Battery Analytics Dashboard", "desc": "Python-native analytics platform for Li-ion fleet health monitoring. OCV-IR trending, SOH decay curves, thermal event detection. Built on 96+ real dashboards from Cospowers deployments.", "status": "building"},
+    {"title": "CycleIQ — Parallel Battery Validation Tool", "desc": "Automated test suite for mixed-capacity, mixed-generation LFP paralleling. Flags unsafe combinations using data-driven thresholds from 100+ cycle validation studies.", "status": "building"},
+    {"title": "TwinCell — Battery Digital Twin Engine", "desc": "Physics-informed ML model that ingests raw sensor data and builds a live digital twin of each battery cell, predicting remaining useful life and failure modes in real time.", "status": "exploring"},
+    {"title": "Refurb.AI — Second-Life Grading System", "desc": "AI-assisted diagnostic pipeline for retired EV and telecom batteries. Grades packs for second-use routing: residential storage, industrial backup, or responsible recycling.", "status": "exploring"},
+    {"title": "GridSense — V2G and BESS Dispatch Optimizer", "desc": "Real-time AI dispatcher for battery energy storage systems and EV fleets. Reads live market prices, weather, and load data to optimize charge and discharge decisions automatically.", "status": "planned"}
+  ]
+}
