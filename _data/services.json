@@ -1,0 +1,13 @@
+{
+  "tag": "// services",
+  "title": "How we work with you.",
+  "desc": "Deep technical work, not surface-level consulting. We bring real hands-on BESS and AI experience to your specific problem.",
+  "cards": [
+    {"icon": "🔬", "title": "Battery Testing and Characterization", "desc": "OCV-IR, EIS, C-rate profiling, thermal cycling, degradation analysis. Engineering-grade reports your team can act on."},
+    {"icon": "🐍", "title": "Custom Python Analytics", "desc": "End-to-end analytics pipelines for your battery data. From raw BMS exports to dashboards, automated anomaly alerts, and SOH reports."},
+    {"icon": "📐", "title": "BESS Sizing and Tender Support", "desc": "Battery plus inverter sizing methodology, BESS tender evaluation, and documentation for projects from 5 kWh to 20 MWh scale."},
+    {"icon": "📝", "title": "Technical White Papers", "desc": "Standards-aligned documentation per IEC, UL, and IEEE. Parallel battery operation guidelines, lifecycle policies, and safety protocols."},
+    {"icon": "🤖", "title": "GenAI Workflow Integration", "desc": "Bringing AI tools into engineering workflows. Automated report generation, LLM-assisted RCA, failure documentation, and knowledge capture."},
+    {"icon": "🔗", "title": "OEM Technical Liaison", "desc": "FAT coordination, protocol verification, and technical submissions with Chinese and international battery OEMs. We speak the language on both sides."}
+  ]
+}
