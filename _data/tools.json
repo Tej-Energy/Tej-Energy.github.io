@@ -1,0 +1,11 @@
+{
+  "tag": "// tools",
+  "title": "Open resources and tools.",
+  "desc": "Scripts, calculators, and reference tools we are gradually making available, built for battery engineers and energy storage teams.",
+  "items": [
+    {"title": "BESS Sizing Calculator", "desc": "Input your load profile, get battery plus inverter sizing recommendations. Built on real tender evaluation methodology from utility-scale projects.", "status": "building"},
+    {"title": "Cell Compatibility Checker", "desc": "Check whether two battery cells are safe to parallel based on capacity, chemistry, and age. Thresholds from 100+ LFP cycle validation studies.", "status": "building"},
+    {"title": "SOH Estimator — Python Notebook", "desc": "Open-source Jupyter notebook for estimating State of Health from OCV-IR data. Get a degradation report and trend visualization from your own test data.", "status": "exploring"},
+    {"title": "AI Battery Failure Pattern Library", "desc": "Searchable database of battery failure modes, RCA examples, and recommended remediation, built from real incident reviews and engineering documentation.", "status": "planned"}
+  ]
+}
